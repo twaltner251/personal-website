@@ -13,7 +13,8 @@ export const Contact: React.FC = () => {
 
     try {
       // REPLACE with your actual Formspree endpoint URL
-      const response = await fetch('https://formspree.io/f/mvkkqdbe', {
+      const endpoint = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+      const response = await fetch(endpoint, {
         method: 'POST',
         body: data,
         headers: {
