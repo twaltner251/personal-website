@@ -13,19 +13,25 @@ const projects: Project[] = [
     title: "NASA NeoW API Visualizer",
     description: "Built a 3D web application fetching and rendering real-time near-Earth asteroid data from NASA's NeoWs API. Bridged declarative React with imperative WebGL using useRef, implemented smart caching, and established custom garbage-collection.",
     tags: ["React", "Three.js", "WebGL", "HTML/CSS"],
-    link: "https://github.com/twaltner251"
+    link: "https://github.com/twaltner251/NASA-NeoW-API-Visualizer"
   },
   {
     title: "Dynamic CLI Minibatch MLP",
     description: "Engineered a custom Multi-Layer Perceptron from scratch without popular ML frameworks to classify the FashionMNIST dataset. Scaled stochastic gradient descent (SGD) with He weight initialization and dynamic CLI hyperparameter configuration.",
     tags: ["Python", "NumPy", "Machine Learning"],
-    link: "https://github.com/twaltner251"
+    link: "https://github.com/twaltner251/Dynamic-MLP"
   },
   {
     title: "Map Routing & Pathfinding Visualizer",
     description: "Engineered a geographic routing application utilizing Dijkstra's algorithm and a custom PriorityQueue to compute shortest paths with a custom graph data structure and Haversine distance calculations.",
     tags: ["Java", "Java Swing", "Algorithms"],
     link: "https://github.com/twaltner251"
+  },
+  {
+    title: "2D Gravity Simulation Engine",
+    description: "Developed an interactive 2D physics simulation to model N-body gravitational interactions, utilizing custom vector mathematics and Newtonian mechanics to compute real-time particle trajectories and collision dynamics.",
+    tags: ["Java", "Physics Simulation", "Algorithms"],
+    link: "https://github.com/twaltner251/2D-Gravity-Sim"
   }
 ];
 

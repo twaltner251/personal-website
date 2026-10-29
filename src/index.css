@@ -65,7 +65,7 @@ html {
 
 .animate-wave {
   display: inline-block;
-  animation: wave 2.5s infinite;
+  animation: wave 2s infinite;
   transform-origin: 70% 70%; /* Keeps the hand pivoting nicely from the wrist */
 }
 

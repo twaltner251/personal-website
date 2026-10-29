@@ -10,16 +10,22 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: "Jazz Musician & Band Leader",
-    company: "Self-employed — Portland, OR / Rochester, NY",
-    period: "May 2020 — Present",
-    description: "Direct 3 active jazz ensembles (Overbridge, Tyler Waltner Quartet/Trio, Nu Zeta), producing 100+ annual live performances. Manage full operational lifecycle including venue booking, contract negotiation, financial tracking, and musical arrangement."
+    role: "AI Security Research Assistant",
+    company: "University of Rochester — Rochester, NY",
+    period: "Oct 2026 — Present", 
+    description: "Conducting research on AI security, analyzing and evaluating LLM jailbreak vuneralbilities by applying SEMA (Simple yet Effective Multi-turn jailbreak Attacks) across various modalities under the guidance of PhD student Mingqian Feng."
   },
   {
     role: "Coding Camp Instructor",
     company: "Coding with Kids — Portland, OR",
-    period: "Aug. 2024 — Present",
+    period: "May 2024 — Aug 2026",
     description: "Taught engaging coding classes to K-12 students using structured curriculum in Python, AI/ML, data analysis, and game development. Led hands-on projects and supported student problem-solving in a positive classroom environment."
+  },
+  {
+    role: "Jazz Musician & Band Leader",
+    company: "Self-employed — Portland, OR / Rochester, NY",
+    period: "May 2020 — Present",
+    description: "Direct 3 active jazz ensembles (Overbridge, Tyler Waltner Quartet/Trio, Nu Zeta), producing 100+ annual live performances. Manage full operational lifecycle including venue booking, contract negotiation, financial tracking, and musical arrangement."
   }
 ];
 
@@ -30,7 +36,7 @@ export const ExperienceSection: React.FC = () => {
         <div className="p-2 rounded-lg bg-zinc-900 border border-zinc-800">
           <Briefcase className="w-5 h-5 text-emerald-400" />
         </div>
-        <h2 className="text-2xl font-bold tracking-tight text-white">Experience</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-white">Professional Experience</h2>
       </div>
       
       <div className="grid gap-6">

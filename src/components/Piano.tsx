@@ -63,8 +63,8 @@ export const Piano: React.FC = () => {
         <div className="inline-flex items-center gap-1.5 text-xs text-amber-400 font-mono">
           <Music className="w-3.5 h-3.5" /> Web Audio API Interactive Synth
         </div>
-        <h2 className="text-2xl font-bold tracking-tight text-white">Playable Piano</h2>
-        <p className="text-sm text-zinc-400">Click any key below to play synthesizer notes in real-time.</p>
+        <h2 className="text-2xl font-bold tracking-tight text-white">Tyler's Piano</h2>
+        <p className="text-sm text-zinc-400">Click a key, any key!</p>
       </div>
 
       <div className="flex justify-center py-4 overflow-x-auto">
