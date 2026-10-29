@@ -48,7 +48,7 @@ export const Contact: React.FC = () => {
             required 
             type="text" 
             name="name"
-            placeholder="Jane Doe" 
+            placeholder="First Last" 
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-2.5 text-sm text-zinc-100 focus:outline-none focus:border-zinc-600 transition" 
           />
         </div>
@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
             required 
             type="email" 
             name="email"
-            placeholder="jane@example.com" 
+            placeholder="user@website.com" 
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-2.5 text-sm text-zinc-100 focus:outline-none focus:border-zinc-600 transition" 
           />
         </div>
@@ -68,7 +68,7 @@ export const Contact: React.FC = () => {
             required 
             rows={4} 
             name="message"
-            placeholder="Let's build something together..." 
+            placeholder="Send me a message!" 
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-2.5 text-sm text-zinc-100 focus:outline-none focus:border-zinc-600 transition"
           ></textarea>
         </div>
