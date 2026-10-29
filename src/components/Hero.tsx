@@ -34,7 +34,7 @@ export const Hero: React.FC = () => {
             I have a passion for algorithms, data structures, and building fast, efficient, and scalable software solutions. 
           </p>
           <p className="text-s text-white max-w-2xl leading-relaxed">
-            I also have a great passion for jazz as well as cuddling with my dogs Chacha-maru and Ponsuke :)
+            I also have a great passion for jazz as well as spending time with my dogs Chacha-maru and Ponsuke :)
           </p>
 
           {/* Buttons moved here, underneath the text but inside the left column */}
@@ -48,20 +48,20 @@ export const Hero: React.FC = () => {
               <FileText className="w-4 h-4 object-contain" /> Resume
             </a>
             <a 
-              href="" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
-            >
-              <img src={Linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" /> LinkedIn
-            </a>
-            <a 
               href="https://github.com/twaltner251" 
               target="_blank" 
               rel="noreferrer"
               className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
             >
               <img src={Github} alt="GitHub" className="w-4 h-4 object-contain" /> GitHub
+            </a>
+            <a 
+              href="https://www.linkedin.com/in/tyler-waltner-947726306/" 
+              target="_blank" 
+              rel="https://www.linkedin.com/in/tyler-waltner-947726306/"
+              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
+            >
+              <img src={Linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" /> LinkedIn
             </a>
             <a 
               href="#contact" 

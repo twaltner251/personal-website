@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "Map Routing & Pathfinding Visualizer",
     description: "Engineered a geographic routing application utilizing Dijkstra's algorithm and a custom PriorityQueue to compute shortest paths with a custom graph data structure and Haversine distance calculations.",
     tags: ["Java", "Java Swing", "Algorithms"],
-    link: "https://github.com/twaltner251"
+    link: "https://github.com/twaltner251/Dijkstra-s-Pathfinder"
   },
   {
     title: "2D Gravity Simulation Engine",
