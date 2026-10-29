@@ -9,7 +9,7 @@ interface PianoKey {
 }
 
 const pianoKeys: PianoKey[] = [
-  { note: 'C4', freq: 261.63, type: 'white', label: 'C' },
+  { note: 'C4', freq: 261.63, type: 'white', label: 'C4' },
   { note: 'C#4', freq: 277.18, type: 'black', label: 'C#' },
   { note: 'D4', freq: 293.66, type: 'white', label: 'D' },
   { note: 'D#4', freq: 311.13, type: 'black', label: 'D#' },

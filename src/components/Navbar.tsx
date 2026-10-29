@@ -1,5 +1,5 @@
 import React from 'react';
-import { Music, FileText } from 'lucide-react';
+import { Music } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   return (
@@ -16,16 +16,6 @@ export const Navbar: React.FC = () => {
           <a href="#piano" className="hover:text-zinc-100 transition flex items-center gap-1.5"><Music className="w-3.5 h-3.5 text-amber-400" /> Piano</a>
           <a href="#contact" className="hover:text-zinc-100 transition">Contact</a>
         </nav>
-        <div className="flex items-center gap-3">
-          <a 
-            href="/resume.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-md bg-zinc-800/80 hover:bg-zinc-700 text-zinc-200 transition border border-zinc-700/50"
-          >
-            <FileText className="w-3.5 h-3.5" /> Resume
-          </a>
-        </div>
       </div>
     </header>
   );
