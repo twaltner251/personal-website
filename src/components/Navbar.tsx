@@ -5,7 +5,7 @@ export const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#09090b]/80 backdrop-blur-md border-b border-zinc-800/60">
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#about" className="font-semibold text-lg tracking-tight flex items-center gap-2 text-zinc-100">
+        <a href="#" className="font-semibold text-lg tracking-tight flex items-center gap-2 text-zinc-100">
           <BadgeJapaneseYen/>
           Tyler Waltner
         </a>

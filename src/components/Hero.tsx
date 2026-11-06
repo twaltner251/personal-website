@@ -17,7 +17,7 @@ const images = [
 export const Hero: React.FC = () => {
   return (
     <section id="about" className="space-y-8 pt-8">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-s text-zinc-400">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-s text-zinc-300">
           <Sparkles className="w-4.5 h-4.5 text-amber-400" /> Computer Science @ University of Rochester & Jazz Performance @ Eastman School of Music
         </div>
       
@@ -43,7 +43,7 @@ export const Hero: React.FC = () => {
               href="/resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-900 font-medium text-sm hover:bg-zinc-200 transition flex items-center gap-2 shadow-sm"
+              className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-900 font-medium text-sm hover:bg-zinc-400 transition flex items-center gap-2 shadow-sm"
             >
               <FileText className="w-4 h-4 object-contain" /> Resume
             </a>
@@ -51,21 +51,21 @@ export const Hero: React.FC = () => {
               href="https://github.com/twaltner251" 
               target="_blank" 
               rel="noreferrer"
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
+              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-700 text-zinc-100 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
             >
-              <img src={Github} alt="GitHub" className="w-4 h-4 object-contain" /> GitHub
+              <img src={Github} alt="GitHub" className="w-4 h-4 object-contain" style={{ filter: 'invert(100%)' }} /> GitHub
             </a>
             <a 
               href="https://www.linkedin.com/in/tyler-waltner-947726306/" 
               target="_blank" 
               rel="https://www.linkedin.com/in/tyler-waltner-947726306/"
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
+              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-700 text-zinc-100 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
             >
               <img src={Linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" /> LinkedIn
             </a>
             <a 
               href="#contact" 
-              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-zinc-300 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
+              className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-700 text-zinc-100 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
             >
               <Mail className="w-4 h-4" /> Contact
             </a>

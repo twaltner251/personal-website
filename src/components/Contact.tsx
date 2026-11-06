@@ -68,7 +68,7 @@ export const Contact: React.FC = () => {
             required 
             rows={4} 
             name="message"
-            placeholder="Send me a message!" 
+            placeholder="Your message here" 
             className="w-full bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-2.5 text-sm text-zinc-100 focus:outline-none focus:border-zinc-600 transition"
           ></textarea>
         </div>

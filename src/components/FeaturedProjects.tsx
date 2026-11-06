@@ -2,6 +2,7 @@ import React from 'react';
 import { Code, ExternalLink } from 'lucide-react';
 
 interface Project {
+  img: string;
   title: string;
   description: string;
   tags: string[];
@@ -9,25 +10,29 @@ interface Project {
 }
 
 const projects: Project[] = [
-  {
+  { 
+    img: "/src/assets/NASA_demo.webm",
     title: "NASA NeoW API Visualizer",
     description: "Built a 3D web application fetching and rendering real-time near-Earth asteroid data from NASA's NeoWs API. Bridged declarative React with imperative WebGL using useRef, implemented smart caching, and established custom garbage-collection.",
     tags: ["React", "Three.js", "WebGL", "HTML/CSS"],
     link: "https://github.com/twaltner251/NASA-NeoW-API-Visualizer"
   },
   {
+    img: "/src/assets/MLP_demo.webm",
     title: "Dynamic CLI Minibatch MLP",
     description: "Engineered a custom Multi-Layer Perceptron from scratch without popular ML frameworks to classify the FashionMNIST dataset. Scaled stochastic gradient descent (SGD) with He weight initialization and dynamic CLI hyperparameter configuration.",
     tags: ["Python", "NumPy", "Machine Learning"],
     link: "https://github.com/twaltner251/Dynamic-MLP"
   },
   {
+    img: "/src/assets/path_demo.webm",
     title: "Map Routing & Pathfinding Visualizer",
     description: "Engineered a geographic routing application utilizing Dijkstra's algorithm and a custom PriorityQueue to compute shortest paths with a custom graph data structure and Haversine distance calculations.",
     tags: ["Java", "Java Swing", "Algorithms"],
     link: "https://github.com/twaltner251/Dijkstra-s-Pathfinder"
   },
   {
+    img: "/src/assets/2d_demo.webm",
     title: "2D Gravity Simulation Engine",
     description: "Developed an interactive 2D physics simulation to model N-body gravitational interactions, utilizing custom vector mathematics and Newtonian mechanics to compute real-time particle trajectories and collision dynamics.",
     tags: ["Java", "Physics Simulation", "Algorithms"],
@@ -55,6 +60,9 @@ export const FeaturedProjects: React.FC = () => {
                   <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
+                <div className="flex justify-center">
+                <video src={project.img} title={project.title} className="rounded-md object-cover w-auto max-h-50" autoPlay loop muted playsInline />
+                </div>
               <p className="text-sm text-zinc-400 leading-relaxed">{project.description}</p>
             </div>
             <div className="flex flex-wrap gap-1.5 pt-2">
