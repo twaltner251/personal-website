@@ -20,6 +20,28 @@ build_site:
     paths:
       - dist/         # Saves the Vite build output
 
+# The Docker image that will be used to build your app
+image: node:lts
+
+stages:
+  - build
+  - deploy
+
+build_site:
+  stage: build
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+  script:
+    - npm ci
+    - npm run build   # Compiles your Vite app into the 'dist' folder
+  artifacts:
+    paths:
+      - dist/         # Saves the Vite build output
+
 pages:
   stage: deploy
   image: alpine:latest
@@ -32,4 +54,4 @@ pages:
       - public
   rules:
     - if: '$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH' # Only runs on pushes to your main/default branch
-    
+        
