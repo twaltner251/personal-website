@@ -8,9 +8,9 @@ interface Track {
 }
 
 const playlist: Track[] = [
-  { title: "Just Squeeze Me", artist: "J.E.T. Trio", src: "../audio/squeeze.mp3" },
-  { title: "Skylark", artist: "J.E.T. Trio", src: "../audio/skylark.mp3" },
-  { title: "This I Dig of You", artist: "J.E.T. Trio", src: "../audio/dig.mp3" },
+  { title: "Just Squeeze Me", artist: "J.E.T. Trio", src: `${import.meta.env.BASE_URL}audio/squeeze.mp3` },
+  { title: "Skylark", artist: "J.E.T. Trio", src: `${import.meta.env.BASE_URL}audio/skylark.mp3` },
+  { title: "This I Dig of You", artist: "J.E.T. Trio", src: `${import.meta.env.BASE_URL}audio/dig.mp3` },
 ];
 
 export const Vinyl: React.FC = () => {
