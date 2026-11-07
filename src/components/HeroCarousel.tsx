@@ -1,7 +1,21 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const HeroCarousel = ({ images = [], autoPlay = true, interval = 5000 }) => {
+// Define the shape of each image object
+export interface CarouselImage {
+  url: string;
+  alt?: string;
+  caption?: string;
+}
+
+// Define the component props interface
+interface HeroCarouselProps {
+  images?: CarouselImage[];
+  autoPlay?: boolean;
+  interval?: number;
+}
+
+const HeroCarousel = ({ images = [], autoPlay = true, interval = 5000 }: HeroCarouselProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Handle auto-play functionality
@@ -46,7 +60,7 @@ const HeroCarousel = ({ images = [], autoPlay = true, interval = 5000 }) => {
             {/* Optional Caption Overlay */}
             {image.caption && (
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-neutral-950/80 via-neutral-950/40 to-transparent p-6 text-white">
-                <p className="text-xxs sm:text-base font-small">{image.caption}</p>
+                <p className="text-xs sm:text-base font-normal">{image.caption}</p>
               </div>
             )}
           </div>
