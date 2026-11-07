@@ -1,17 +1,16 @@
 import React from 'react';
-import { Sparkles, ChevronRight, Mail, FileText } from 'lucide-react';
+import { Sparkles, Mail, FileText } from 'lucide-react';
 import Github from '../assets/github.png';
 import pfp from '../assets/pfp.png'
 import dogs from '../assets/dogs.png'
 import Linkedin from '../assets/linkedin.png'
 import jazz from '../assets/jazz.png'
-import HeroCarousel from './HeroCarousel';
+import HeroCarousel, { CarouselImage } from './HeroCarousel';
 
-const images = [
+const images: CarouselImage[] = [
   { url: pfp, caption: 'NYC (2025)' },
   { url: dogs, caption: 'Ponsuke (L) Chacha-maru (R)' },
   { url: jazz, caption: 'Rose City Book Pub (2025)' },
-
 ];
 
 export const Hero: React.FC = () => {
@@ -58,7 +57,7 @@ export const Hero: React.FC = () => {
             <a 
               href="https://www.linkedin.com/in/tyler-waltner-947726306/" 
               target="_blank" 
-              rel="https://www.linkedin.com/in/tyler-waltner-947726306/"
+              rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-700 text-zinc-100 font-medium text-sm transition border border-zinc-800 flex items-center gap-2"
             >
               <img src={Linkedin} alt="LinkedIn" className="w-4 h-4 object-contain" /> LinkedIn
