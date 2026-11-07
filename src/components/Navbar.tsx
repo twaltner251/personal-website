@@ -1,5 +1,5 @@
 import React from 'react';
-import { BadgeJapaneseYen, Book, Briefcase, Music, Code, Mail } from 'lucide-react';
+import { BadgeJapaneseYen, Briefcase, Music, Code, Mail } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   return (
