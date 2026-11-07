@@ -5,7 +5,7 @@ import pfp from '../assets/pfp.png'
 import dogs from '../assets/dogs.png'
 import Linkedin from '../assets/linkedin.png'
 import jazz from '../assets/jazz.png'
-import HeroCarousel, { CarouselImage } from './HeroCarousel';
+import HeroCarousel, { type CarouselImage } from './HeroCarousel';
 
 const images: CarouselImage[] = [
   { url: pfp, caption: 'NYC (2025)' },
