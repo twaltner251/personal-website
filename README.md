@@ -26,11 +26,6 @@ A modern, high-performance personal portfolio and interactive showcase built wit
 
 ---
 
-Todo: 
-- Update resume file in assets
-
----
-
 ## ⚙️ Local Development Setup
 
 To run this project locally on your machine, follow these steps:
