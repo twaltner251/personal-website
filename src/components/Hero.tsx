@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
           {/* Buttons moved here, underneath the text but inside the left column */}
           <div className="flex flex-wrap items-center gap-4 pt-2">
             <a 
-              href="/resume.pdf" 
+              href="./resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="px-5 py-2.5 rounded-lg bg-zinc-100 text-zinc-900 font-medium text-sm hover:bg-zinc-400 transition flex items-center gap-2 shadow-sm"
